@@ -1,3 +1,7 @@
+[Unit]
+Requires=redis-cache.service redis-queue.service
+After=backend.service
+
 [Container]
 Exec=bench schedule
 Image=frappe/erpnext:v15.84.0

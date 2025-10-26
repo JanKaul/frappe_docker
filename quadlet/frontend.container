@@ -1,6 +1,6 @@
 [Unit]
-Requires=websocket.service
-After=websocket.service
+Requires=backend.service websocket.service
+After=backend.service websocket.service
 
 [Container]
 Environment=BACKEND=backend:8000 FRAPPE_SITE_NAME_HEADER=frontend SOCKETIO=websocket:9000 UPSTREAM_REAL_IP_ADDRESS=127.0.0.1 UPSTREAM_REAL_IP_HEADER=X-Forwarded-For UPSTREAM_REAL_IP_RECURSIVE=off PROXY_READ_TIMEOUT=120 CLIENT_MAX_BODY_SIZE=50m

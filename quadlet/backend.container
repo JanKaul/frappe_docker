@@ -1,3 +1,7 @@
+[Unit]
+Requires=db.service redis-cache.service redis-queue.service
+After=db.service redis-cache.service redis-queue.service
+
 [Container]
 Environment=DB_HOST=db DB_PORT=3306 MYSQL_ROOT_PASSWORD=admin MARIADB_ROOT_PASSWORD=admin
 Image=frappe/erpnext:v15.84.0

@@ -1,3 +1,6 @@
+[Unit]
+After=db.service redis-cache.service redis-queue.service
+
 [Container]
 Entrypoint=["bash","-c"]
 Environment=DB_HOST=db DB_PORT=3306 REDIS_CACHE=redis-cache:6379 REDIS_QUEUE=redis-queue:6379 SOCKETIO_PORT=9000
