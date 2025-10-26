@@ -4,7 +4,7 @@ Exec='--character-set-server=utf8mb4' '--collation-server=utf8mb4_unicode_ci' --
 HealthCmd=mysqladmin ping -h localhost --password=admin
 HealthInterval=1s
 HealthRetries=20
-Image=mariadb:10.6
+Image=docker.io/mariadb:10.6
 Network=frappe_network
 Volume=db-data:/var/lib/mysql
 

@@ -1,5 +1,5 @@
 [Container]
-Image=redis:6.2-alpine
+Image=docker.io/redis:6.2-alpine
 Network=frappe_network
 Volume=redis-queue-data:/data
 
