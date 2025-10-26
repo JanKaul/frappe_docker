@@ -1,0 +1,7 @@
+[Container]
+Image=redis:6.2-alpine
+Network=frappe_network
+Volume=redis-queue-data:/data
+
+[Service]
+Restart=on-failure

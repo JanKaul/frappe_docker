@@ -1,0 +1,6 @@
+[Container]
+Image=redis:6.2-alpine
+Network=frappe_network
+
+[Service]
+Restart=on-failure
