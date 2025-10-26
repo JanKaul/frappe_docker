@@ -1,6 +1,6 @@
 [Container]
 Image=docker.io/redis:6.2-alpine
-Network=frappe_network
+Network=systemd-frappe_network
 
 [Service]
 Restart=on-failure

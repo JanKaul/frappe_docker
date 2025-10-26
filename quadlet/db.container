@@ -5,7 +5,7 @@ HealthCmd=mysqladmin ping -h localhost --password=admin
 HealthInterval=1s
 HealthRetries=20
 Image=docker.io/mariadb:10.6
-Network=frappe_network
+Network=systemd-frappe_network
 Volume=db-data:/var/lib/mysql
 
 [Service]
