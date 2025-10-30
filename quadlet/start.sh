@@ -2,7 +2,7 @@
 
 # Layer 1: Network
 echo_info "Starting network..."
-sudo systemctl start frappe_network.service
+sudo systemctl start frappe_network-network.service
 
 # Layer 2: Database and Redis services
 echo_info "Starting database and redis services..."
