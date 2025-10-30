@@ -10,3 +10,6 @@ Volume=db-data:/var/lib/mysql
 
 [Service]
 Restart=on-failure
+
+[Install]
+WantedBy=default.target

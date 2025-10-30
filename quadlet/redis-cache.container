@@ -4,3 +4,6 @@ Network=systemd-frappe_network
 
 [Service]
 Restart=on-failure
+
+[Install]
+WantedBy=default.target

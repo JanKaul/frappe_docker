@@ -11,3 +11,6 @@ Volume=logs:/home/frappe/frappe-bench/logs
 
 [Service]
 Restart=on-failure
+
+[Install]
+WantedBy=default.target
