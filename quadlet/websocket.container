@@ -3,7 +3,7 @@ Requires=redis-cache.service redis-queue.service
 After=redis-cache.service redis-queue.service
 
 [Container]
-Environment=FRAPPE_REDIS_CACHE=redis://redis-cache:6379 FRAPPE_REDIS_QUEUE=redis://redis-queue:6379
+Environment=FRAPPE_REDIS_CACHE=redis://systemd-redis-cache:6379 FRAPPE_REDIS_QUEUE=redis://systemd-redis-queue:6379
 Exec=node /home/frappe/frappe-bench/apps/frappe/socketio.js
 Image=docker.io/frappe/erpnext:v15.84.0
 Network=systemd-frappe_network
